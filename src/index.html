@@ -9,16 +9,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img src="images/ebac_logo.svg" alt="ebac-logo" class="hero__logo">
             <p class="hero__text">
-                O maior evento de tecnologia começa em 10d 12h 20m 15s
+                O maior evento de tecnologia começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2025 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="buttons buttons--primary">
+                    Garanta seu ingresso
+                </a>
+            </div>
         </div>
     </header>
+    <section class="events events--front-end">
+        <div class="container" data-aos="fade-right">
+            <div class= "events__details">
+                <h2 class="events__details__title">Front-End</h2>
+                <p class="events__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deserunt reprehenderit aperiam, hic dolor asperiores neque quam temporibus dolores, quia totam, possimus pariatur quibusdam id consectetur quod reiciendis perferendis accusamus. Laudantium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quidem saepe beatae quisquam aliquam? Fuga voluptatum veritatis voluptas voluptates? Ratione cupiditate at ut amet porro id doloremque distinctio possimus molestiae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum perferendis laborum quisquam autem sunt suscipit, repellendus id natus in nam cumque, veritatis cupiditate est? Ratione atque eius voluptatem repellat.
+                </p>
+            </div>
+            <img class="events__img" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+    <section class="events events--ux-ui events--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class= "events__details">
+                <h2 class="events__details__title">UI/UX</h2>
+                <p class="events__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deserunt reprehenderit aperiam, hic dolor asperiores neque quam temporibus dolores, quia totam, possimus pariatur quibusdam id consectetur quod reiciendis perferendis accusamus. Laudantium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quidem saepe beatae quisquam aliquam? Fuga voluptatum veritatis voluptas voluptates? Ratione cupiditate at ut amet porro id doloremque distinctio possimus molestiae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum perferendis laborum quisquam autem sunt suscipit, repellendus id natus in nam cumque, veritatis cupiditate est? Ratione atque eius voluptatem repellat.
+                </p>
+            </div>  
+            <img class="events__img" src="./images/ui-ux.png" alt="ui-ux">      
+        </div>
+    </section>
+    <section class="events events--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class= "events__details">
+                <h2 class="events__details__title">Data science</h2>
+                <p class="events__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deserunt reprehenderit aperiam, hic dolor asperiores neque quam temporibus dolores, quia totam, possimus pariatur quibusdam id consectetur quod reiciendis perferendis accusamus. Laudantium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quidem saepe beatae quisquam aliquam? Fuga voluptatum veritatis voluptas voluptates? Ratione cupiditate at ut amet porro id doloremque distinctio possimus molestiae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum perferendis laborum quisquam autem sunt suscipit, repellendus id natus in nam cumque, veritatis cupiditate est? Ratione atque eius voluptatem repellat.
+                </p>
+            </div>
+            <img class="events__img" src="./images/data.png" alt="data">
+        </div>
+    </section>
+    <section class="events events--back-end events--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class= "events__details">
+                <h2 class="events__details__title">Back-End</h2>
+                <p class="events__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deserunt reprehenderit aperiam, hic dolor asperiores neque quam temporibus dolores, quia totam, possimus pariatur quibusdam id consectetur quod reiciendis perferendis accusamus. Laudantium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quidem saepe beatae quisquam aliquam? Fuga voluptatum veritatis voluptas voluptates? Ratione cupiditate at ut amet porro id doloremque distinctio possimus molestiae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum perferendis laborum quisquam autem sunt suscipit, repellendus id natus in nam cumque, veritatis cupiditate est? Ratione atque eius voluptatem repellat.
+                </p>
+            </div>
+            <img class="events__img" src="./images/backend.png" alt="back-end">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
